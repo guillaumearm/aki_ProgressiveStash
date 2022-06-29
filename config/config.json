@@ -1,5 +1,179 @@
 {
+  "debug": true,
   "initial_stash_size": 68,
-  "stash_upgrades": [],
+  "stash_upgrades": [
+    {
+      "// Tier 2: Left Behind stash": true,
+      "size": 100,
+      "requirements": [
+        {
+          "templateId": "5d1b317c86f7742523398392",
+          "count": 1,
+          "isFunctional": false,
+          "type": "Item"
+        },
+        {
+          "templateId": "59e35ef086f7741777737012",
+          "count": 10,
+          "isFunctional": false,
+          "type": "Item"
+        },
+        {
+          "templateId": "590c5bbd86f774785762df04",
+          "count": 4,
+          "isFunctional": false,
+          "type": "Item"
+        },
+        {
+          "areaType": 0,
+          "requiredLevel": 1,
+          "type": "Area"
+        },
+        {
+          "templateId": "5449016a4bdc2d6f028b456f",
+          "count": 2500000,
+          "isFunctional": false,
+          "type": "Item"
+        },
+        {
+          "areaType": 3,
+          "requiredLevel": 0,
+          "type": "Area"
+        },
+        {
+          "templateId": "590c31c586f774245e3141b2",
+          "count": 5,
+          "isFunctional": false,
+          "type": "Item"
+        }
+      ]
+    },
+    {
+      "// Tier 3: Prepare for Escape stash": true,
+      "size": 132,
+      "requirements": [
+        {
+          "areaType": 0,
+          "requiredLevel": 2,
+          "type": "Area"
+        },
+        {
+          "areaType": 5,
+          "requiredLevel": 2,
+          "type": "Area"
+        },
+        {
+          "templateId": "59e35de086f7741778269d84",
+          "count": 2,
+          "isFunctional": false,
+          "type": "Item"
+        },
+        {
+          "templateId": "59e35ef086f7741777737012",
+          "count": 15,
+          "isFunctional": false,
+          "type": "Item"
+        },
+        {
+          "templateId": "5449016a4bdc2d6f028b456f",
+          "count": 8500000,
+          "isFunctional": false,
+          "type": "Item"
+        },
+        {
+          "traderId": "54cb50c76803fa8b248b4571",
+          "loyaltyLevel": 3,
+          "type": "TraderLoyalty"
+        },
+        {
+          "areaType": 3,
+          "requiredLevel": 1,
+          "type": "Area"
+        },
+        {
+          "traderId": "5ac3b934156ae10c4430e83c",
+          "loyaltyLevel": 3,
+          "type": "TraderLoyalty"
+        },
+        {
+          "templateId": "590c31c586f774245e3141b2",
+          "count": 7,
+          "isFunctional": false,
+          "type": "Item"
+        }
+      ]
+    },
+    {
+      "// Tier 4: Edge of Darkness stash": true,
+      "size": 164,
+      "requirements": [
+        {
+          "areaType": 4,
+          "requiredLevel": 3,
+          "type": "Area"
+        },
+        {
+          "areaType": 10,
+          "requiredLevel": 3,
+          "type": "Area"
+        },
+        {
+          "areaType": 5,
+          "requiredLevel": 3,
+          "type": "Area"
+        },
+        {
+          "templateId": "569668774bdc2da2298b4568",
+          "count": 200000,
+          "isFunctional": false,
+          "type": "Item"
+        },
+        {
+          "traderId": "5935c25fb3acc3127c3d8cd9",
+          "loyaltyLevel": 4,
+          "type": "TraderLoyalty"
+        },
+        {
+          "areaType": 3,
+          "requiredLevel": 2,
+          "type": "Area"
+        },
+        {
+          "areaType": 11,
+          "requiredLevel": 2,
+          "type": "Area"
+        },
+        {
+          "traderId": "5ac3b934156ae10c4430e83c",
+          "loyaltyLevel": 4,
+          "type": "TraderLoyalty"
+        },
+        {
+          "templateId": "57347c5b245977448d35f6e1",
+          "count": 10,
+          "isFunctional": false,
+          "type": "Item"
+        },
+        {
+          "templateId": "57347c77245977448d35f6e2",
+          "count": 10,
+          "isFunctional": false,
+          "type": "Item"
+        },
+        {
+          "templateId": "590c35a486f774273531c822",
+          "count": 5,
+          "isFunctional": false,
+          "type": "Item"
+        },
+        {
+          "templateId": "60391afc25aff57af81f7085",
+          "count": 2,
+          "isFunctional": false,
+          "type": "Item"
+        }
+      ]
+    }
+  ],
   "secure_containers_crafts": {}
 }

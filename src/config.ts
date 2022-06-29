@@ -28,6 +28,7 @@ export type SecureContainersCrafts = {
 };
 
 export type Config = {
+  debug?: boolean;
   initial_stash_size: number;
   stash_upgrades: StashUpgrade[];
   secure_containers_crafts: SecureContainersCrafts;
