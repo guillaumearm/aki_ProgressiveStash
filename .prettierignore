@@ -1,0 +1,7 @@
+/types/
+/tmp/
+/dist/
+/src/*.js
+/Trap-ProgressiveStash*
+*.md
+package-lock.json
