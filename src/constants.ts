@@ -1,0 +1,22 @@
+/**
+ * Secure containers
+ */
+export const WAIT_POCH_ID = "5732ee6a24597719ae0c0281";
+export const ALPHA_CONTAINER_ID = "544a11ac4bdc2d470e8b456a";
+export const BETA_CONTAINER_ID = "5857a8b324597729ab0a0e7d";
+export const EPSILON_CONTAINER_ID = "59db794186f77448bc595262";
+export const GAMMA_CONTAINER_ID = "5857a8bc2459772bad15db29";
+export const KAPPA_CONTAINER_ID = "5c093ca986f7740a1867ab12";
+
+/**
+ * Vanilla Stashes
+ */
+export const STANDARD_STASH_ID = "566abbc34bdc2d92178b4576";
+export const LEFT_BEHIND_STASH_ID = "5811ce572459770cba1a34ea";
+export const PREPARE_FOR_ESCAPE_STASH_ID = "5811ce662459770f6f490f32";
+export const EDGE_OF_DARKNESS_STASH_ID = "5811ce772459770e9e5f9532";
+
+/**
+ * Progressive stashes
+ */
+export const PROGRESSIVE_STASH_PREFIX_ID = "trap_progressive_stash_";
