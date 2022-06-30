@@ -34,8 +34,8 @@ class ProfieTemplateBuilder {
       return area;
     });
 
-    // 2. set bonus StashSize to Standard stash
-    character.Bonus = [
+    // 2. set bonuses StashSize to Standard stash
+    character.Bonuses = [
       {
         type: "StashSize",
         templateId: STANDARD_STASH_ID,
