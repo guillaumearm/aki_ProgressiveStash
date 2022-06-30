@@ -143,7 +143,9 @@ export class StashBuilder {
         stages[stageId] = {
           ...EMPTY_STAGE,
           bonuses: [{ ...EMPTY_STASH_BONUS, templateId }],
-          requirements: upgrade.requirements,
+          requirements: upgrade.requirements.map((r) =>
+            r.type === "Item" ? { ...r, isFunctional: false } : r
+          ),
         };
       }
     });

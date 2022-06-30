@@ -14,7 +14,9 @@ const createCraft = (
   return {
     _id: `${itemId}_craft`,
     areaType: WORKBENCH_AREA,
-    requirements,
+    requirements: requirements.map((r) =>
+      r.type === "Item" ? { ...r, isFunctional: false } : r
+    ),
     productionTime: 0,
     boosters: null,
     endProduct: itemId,
