@@ -21,6 +21,7 @@ There are 4 tiers of stash upgrades:
 - Tier 4: 10x164
 
 All secure containers size has been modified and can be crafted in the workbench:
+- Waist Pouch: 3x3
 - Alpha: 4x4
 - Beta: 5x5
 - Epsilon: 6x6
