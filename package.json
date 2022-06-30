@@ -2,7 +2,7 @@
   "name": "trap-progressive-stash",
   "displayName": "Trap's Progressive Stash",
   "fullName": "Trap-ProgressiveStash",
-  "version": "1.0.0-beta",
+  "version": "1.0.0",
   "main": "src/mod.js",
   "license": "MIT",
   "author": "Trap",
