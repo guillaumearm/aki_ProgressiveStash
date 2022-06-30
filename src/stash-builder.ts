@@ -245,9 +245,9 @@ export class StashBuilder {
 
     this.setHideoutAreas(tables, stages);
 
-    const nbStashCreated = this.setTemplateItems(tables, items);
+    this.setTemplateItems(tables, items);
     this.setStashLocales(tables, items);
 
-    return nbStashCreated;
+    return Object.keys(stages).length;
   }
 }

@@ -33,3 +33,8 @@ export const EDGE_OF_DARKNESS_STASH_ID = "5811ce772459770e9e5f9532";
 export const STASH_AREA = 3;
 export const WORKBENCH_AREA = 10;
 export const PROGRESSIVE_STASH_PREFIX_ID = "trap_progressive_stash_";
+
+/**
+ * Profile Template
+ */
+export const PROFILE_TEMPLATE_NAME = "Trap's Progressive Stash";
