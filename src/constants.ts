@@ -1,12 +1,23 @@
+import { SecureContainers } from "./config";
+
 /**
  * Secure containers
  */
-export const WAIT_POCH_ID = "5732ee6a24597719ae0c0281";
+export const WAIST_POCH_ID = "5732ee6a24597719ae0c0281";
 export const ALPHA_CONTAINER_ID = "544a11ac4bdc2d470e8b456a";
 export const BETA_CONTAINER_ID = "5857a8b324597729ab0a0e7d";
 export const EPSILON_CONTAINER_ID = "59db794186f77448bc595262";
 export const GAMMA_CONTAINER_ID = "5857a8bc2459772bad15db29";
 export const KAPPA_CONTAINER_ID = "5c093ca986f7740a1867ab12";
+
+export const SECURE_CONTAINERS: Record<keyof SecureContainers, string> = {
+  pouch: WAIST_POCH_ID,
+  alpha: ALPHA_CONTAINER_ID,
+  beta: BETA_CONTAINER_ID,
+  epsilon: EPSILON_CONTAINER_ID,
+  gamma: GAMMA_CONTAINER_ID,
+  kappa: KAPPA_CONTAINER_ID,
+};
 
 /**
  * Vanilla Stashes

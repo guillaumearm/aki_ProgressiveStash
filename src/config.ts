@@ -1,4 +1,6 @@
-import { Requirement } from "@spt-aki/models/eft/hideout/IHideoutArea";
+import type { Requirement as RequirementArea } from "@spt-aki/models/eft/hideout/IHideoutArea";
+import type { Requirement as RequirementProduction } from "@spt-aki/models/eft/hideout/IHideoutProduction";
+
 import { resolve } from "path";
 
 /**
@@ -15,23 +17,28 @@ export type PackageJson = {
  */
 export type StashUpgrade = {
   size: number;
-  requirements: Requirement[];
+  requirements: RequirementArea[];
 };
 
-export type SecureContainersCrafts = {
-  pouch?: Requirement[];
-  alpha?: Requirement[];
-  beta?: Requirement[];
-  epsilon?: Requirement[];
-  gamma?: Requirement[];
-  kappa?: Requirement[];
+export type SecureContainerConfig = {
+  dimensions: [number, number];
+  requirements: RequirementProduction[];
+};
+
+export type SecureContainers = {
+  pouch?: SecureContainerConfig;
+  alpha?: SecureContainerConfig;
+  beta?: SecureContainerConfig;
+  epsilon?: SecureContainerConfig;
+  gamma?: SecureContainerConfig;
+  kappa?: SecureContainerConfig;
 };
 
 export type Config = {
   debug?: boolean;
   initial_stash_size: number;
   stash_upgrades: StashUpgrade[];
-  secure_containers_crafts: SecureContainersCrafts;
+  secure_containers: SecureContainers;
 };
 
 /**

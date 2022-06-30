@@ -175,5 +175,108 @@
       ]
     }
   ],
-  "secure_containers_crafts": {}
+  "secure_containers": {
+    "pouch": {
+      "dimensions": [3, 3],
+      "requirements": [
+        {
+          "templateId": "5e2af4a786f7746d3f3c3400",
+          "count": 1,
+          "isFunctional": true,
+          "type": "Item"
+        },
+        {
+          "templateId": "5e2af47786f7746d404f3aaa",
+          "count": 1,
+          "isFunctional": true,
+          "type": "Item"
+        }
+      ]
+    },
+    "alpha": {
+      "dimensions": [3, 5],
+      "requirements": [
+        {
+          "templateId": "5e2af4a786f7746d3f3c3400",
+          "count": 1,
+          "isFunctional": true,
+          "type": "Item"
+        },
+        {
+          "templateId": "5e2af47786f7746d404f3aaa",
+          "count": 1,
+          "isFunctional": true,
+          "type": "Item"
+        }
+      ]
+    },
+    "beta": {
+      "dimensions": [4, 5],
+      "requirements": [
+        {
+          "templateId": "5e2af4a786f7746d3f3c3400",
+          "count": 1,
+          "isFunctional": true,
+          "type": "Item"
+        },
+        {
+          "templateId": "5e2af47786f7746d404f3aaa",
+          "count": 1,
+          "isFunctional": true,
+          "type": "Item"
+        }
+      ]
+    },
+    "epsilon": {
+      "dimensions": [5, 5],
+      "requirements": [
+        {
+          "templateId": "5e2af4a786f7746d3f3c3400",
+          "count": 1,
+          "isFunctional": true,
+          "type": "Item"
+        },
+        {
+          "templateId": "5e2af47786f7746d404f3aaa",
+          "count": 1,
+          "isFunctional": true,
+          "type": "Item"
+        }
+      ]
+    },
+    "gamma": {
+      "dimensions": [6, 6],
+      "requirements": [
+        {
+          "templateId": "5e2af4a786f7746d3f3c3400",
+          "count": 1,
+          "isFunctional": true,
+          "type": "Item"
+        },
+        {
+          "templateId": "5e2af47786f7746d404f3aaa",
+          "count": 1,
+          "isFunctional": true,
+          "type": "Item"
+        }
+      ]
+    },
+    "kappa": {
+      "dimensions": [6, 8],
+      "requirements": [
+        {
+          "templateId": "5e2af4a786f7746d3f3c3400",
+          "count": 1,
+          "isFunctional": true,
+          "type": "Item"
+        },
+        {
+          "templateId": "5e2af47786f7746d404f3aaa",
+          "count": 1,
+          "isFunctional": true,
+          "type": "Item"
+        }
+      ]
+    }
+  }
 }
