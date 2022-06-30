@@ -177,53 +177,53 @@
   ],
   "secure_containers": {
     "pouch": {
+      "dimensions": [2, 2],
+      "requirements": [
+        {
+          "templateId": "5e2af4a786f7746d3f3c3400",
+          "count": 1,
+          "isFunctional": false,
+          "type": "Tool"
+        },
+        {
+          "templateId": "5e2af47786f7746d404f3aaa",
+          "count": 1,
+          "isFunctional": false,
+          "type": "Tool"
+        }
+      ]
+    },
+    "alpha": {
       "dimensions": [3, 3],
       "requirements": [
         {
           "templateId": "5e2af4a786f7746d3f3c3400",
           "count": 1,
-          "isFunctional": true,
-          "type": "Item"
+          "isFunctional": false,
+          "type": "Tool"
         },
         {
           "templateId": "5e2af47786f7746d404f3aaa",
           "count": 1,
-          "isFunctional": true,
-          "type": "Item"
-        }
-      ]
-    },
-    "alpha": {
-      "dimensions": [3, 5],
-      "requirements": [
-        {
-          "templateId": "5e2af4a786f7746d3f3c3400",
-          "count": 1,
-          "isFunctional": true,
-          "type": "Item"
-        },
-        {
-          "templateId": "5e2af47786f7746d404f3aaa",
-          "count": 1,
-          "isFunctional": true,
-          "type": "Item"
+          "isFunctional": false,
+          "type": "Tool"
         }
       ]
     },
     "beta": {
-      "dimensions": [4, 5],
+      "dimensions": [4, 4],
       "requirements": [
         {
           "templateId": "5e2af4a786f7746d3f3c3400",
           "count": 1,
-          "isFunctional": true,
-          "type": "Item"
+          "isFunctional": false,
+          "type": "Tool"
         },
         {
           "templateId": "5e2af47786f7746d404f3aaa",
           "count": 1,
-          "isFunctional": true,
-          "type": "Item"
+          "isFunctional": false,
+          "type": "Tool"
         }
       ]
     },
@@ -233,14 +233,14 @@
         {
           "templateId": "5e2af4a786f7746d3f3c3400",
           "count": 1,
-          "isFunctional": true,
-          "type": "Item"
+          "isFunctional": false,
+          "type": "Tool"
         },
         {
           "templateId": "5e2af47786f7746d404f3aaa",
           "count": 1,
-          "isFunctional": true,
-          "type": "Item"
+          "isFunctional": false,
+          "type": "Tool"
         }
       ]
     },
@@ -250,14 +250,14 @@
         {
           "templateId": "5e2af4a786f7746d3f3c3400",
           "count": 1,
-          "isFunctional": true,
-          "type": "Item"
+          "isFunctional": false,
+          "type": "Tool"
         },
         {
           "templateId": "5e2af47786f7746d404f3aaa",
           "count": 1,
-          "isFunctional": true,
-          "type": "Item"
+          "isFunctional": false,
+          "type": "Tool"
         }
       ]
     },
@@ -267,14 +267,14 @@
         {
           "templateId": "5e2af4a786f7746d3f3c3400",
           "count": 1,
-          "isFunctional": true,
-          "type": "Item"
+          "isFunctional": false,
+          "type": "Tool"
         },
         {
           "templateId": "5e2af47786f7746d404f3aaa",
           "count": 1,
-          "isFunctional": true,
-          "type": "Item"
+          "isFunctional": false,
+          "type": "Tool"
         }
       ]
     }
