@@ -21,6 +21,7 @@ export type StashUpgrade = {
 };
 
 export type SecureContainerConfig = {
+  not_craftable?: boolean;
   dimensions: [number, number];
   requirements: RequirementProduction[];
 };

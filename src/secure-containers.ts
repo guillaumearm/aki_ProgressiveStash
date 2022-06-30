@@ -38,11 +38,16 @@ export class SecureContainersController {
     Object.keys(this.secureContainers).forEach(
       (containerName: keyof SecureContainers) => {
         const secureContainerId = SECURE_CONTAINERS[containerName];
-        const requirements = this.secureContainers[containerName].requirements;
-        const productionItem = createCraft(secureContainerId, requirements);
+        const secureContainer = this.secureContainers[containerName];
+        const isCraftable = !secureContainer.not_craftable;
 
-        tables.hideout.production.push(productionItem);
-        counter = counter + 1;
+        if (isCraftable) {
+          const requirements = secureContainer.requirements;
+          const productionItem = createCraft(secureContainerId, requirements);
+
+          tables.hideout.production.push(productionItem);
+          counter = counter + 1;
+        }
       }
     );
 
