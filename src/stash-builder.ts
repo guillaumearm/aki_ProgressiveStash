@@ -4,7 +4,7 @@ import type { IDatabaseTables } from "@spt-aki/models/spt/server/IDatabaseTables
 import type { ITemplateItem } from "@spt-aki/models/eft/common/tables/ITemplateItem";
 
 import { getStashId } from "./utils";
-import { Config, StashUpgrade } from "./config";
+import type { Config, StashUpgrade } from "./config";
 import { STANDARD_STASH_ID, STASH_AREA } from "./constants";
 
 const EMPTY_STAGE = {

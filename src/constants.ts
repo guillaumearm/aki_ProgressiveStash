@@ -1,4 +1,4 @@
-import { SecureContainers } from "./config";
+import type { SecureContainers } from "./config";
 
 /**
  * Secure containers

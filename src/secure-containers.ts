@@ -4,7 +4,7 @@ import type {
   Requirement as RequirementProduction,
 } from "@spt-aki/models/eft/hideout/IHideoutProduction";
 
-import { Config, SecureContainers } from "./config";
+import type { Config, SecureContainers } from "./config";
 import { SECURE_CONTAINERS, WORKBENCH_AREA } from "./constants";
 
 const createCraft = (

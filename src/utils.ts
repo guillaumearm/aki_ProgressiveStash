@@ -1,6 +1,8 @@
 import { readFileSync } from "fs";
 
-import { PackageJson, PACKAGE_JSON_PATH } from "./config";
+import type { PackageJson } from "./config";
+import { PACKAGE_JSON_PATH } from "./config";
+
 import {
   EDGE_OF_DARKNESS_STASH_ID,
   LEFT_BEHIND_STASH_ID,

@@ -5,7 +5,8 @@ import type { ILogger } from "@spt-aki/models/spt/utils/ILogger";
 import type { DatabaseServer } from "@spt-aki/servers/DatabaseServer";
 
 import { getModDisplayName, noop, readJsonFile } from "./utils";
-import { Config, CONFIG_PATH } from "./config";
+import type { Config } from "./config";
+import { CONFIG_PATH } from "./config";
 import { StashBuilder } from "./stash-builder";
 import { SecureContainersController } from "./secure-containers";
 import {
