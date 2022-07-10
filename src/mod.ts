@@ -10,11 +10,11 @@ import { CONFIG_PATH } from "./config";
 import { StashBuilder } from "./stash-builder";
 import { SecureContainersController } from "./secure-containers";
 import {
+  ALPHA_CONTAINER_ID,
   EDGE_OF_DARKNESS_STASH_ID,
   PROFILE_TEMPLATE_NAME,
   STANDARD_STASH_ID,
   STASH_AREA,
-  WAIST_POCH_ID,
 } from "./constants";
 
 const uglyClone = (data: any): any => {
@@ -66,12 +66,12 @@ class ProfieTemplateBuilder {
     return false;
   }
 
-  private setPouchAsSecureContainer(usecOrBear: any): void {
+  private setAlphaAsSecureContainer(usecOrBear: any): void {
     const inventory = usecOrBear.character.Inventory;
 
     inventory.items = inventory.items.map((item) => {
       if (item.slotId === "SecuredContainer") {
-        return { ...item, _tpl: WAIST_POCH_ID };
+        return { ...item, _tpl: ALPHA_CONTAINER_ID };
       }
 
       return item;
@@ -90,8 +90,8 @@ class ProfieTemplateBuilder {
     this.setStashLevelOne(profile.usec);
     this.setStashLevelOne(profile.bear);
 
-    this.setPouchAsSecureContainer(profile.usec);
-    this.setPouchAsSecureContainer(profile.bear);
+    this.setAlphaAsSecureContainer(profile.usec);
+    this.setAlphaAsSecureContainer(profile.bear);
 
     profiles[PROFILE_TEMPLATE_NAME] = profile;
     return true;
