@@ -8,8 +8,9 @@
       "requirements": [
         {
           "// hand drill": true,
-          "type": "Tool",
-          "templateId": "5d1b317c86f7742523398392"
+          "type": "Item",
+          "templateId": "5d1b317c86f7742523398392",
+          "count": 1
         },
         {
           "// pack of screws": true,
