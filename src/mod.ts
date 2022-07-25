@@ -1,6 +1,8 @@
 import type { DependencyContainer } from "tsyringe";
 
-import type { IMod } from "@spt-aki/models/external/mod";
+import type { IPreAkiLoadMod } from "@spt-aki/models/external/IPreAkiLoadMod";
+import type { IPostAkiLoadMod } from "@spt-aki/models/external/IPostAkiLoadMod";
+
 import type { ILogger } from "@spt-aki/models/spt/utils/ILogger";
 import type { DatabaseServer } from "@spt-aki/servers/DatabaseServer";
 
@@ -98,7 +100,7 @@ class ProfieTemplateBuilder {
   }
 }
 
-class Mod implements IMod {
+class Mod implements IPreAkiLoadMod, IPostAkiLoadMod {
   private logger: ILogger;
   private debug: (data: string) => void;
   private config: Config;
@@ -107,7 +109,7 @@ class Mod implements IMod {
   private stashBuilder: StashBuilder;
   private secureContainersController: SecureContainersController;
 
-  public load(container: DependencyContainer): void {
+  public preAkiLoad(container: DependencyContainer): void {
     this.config = readJsonFile(CONFIG_PATH);
 
     this.profileTemplateBuilder = new ProfieTemplateBuilder();
@@ -130,7 +132,7 @@ class Mod implements IMod {
     this.logger.info(`===> Loading ${getModDisplayName(true)}`);
   }
 
-  public delayedLoad(container: DependencyContainer): void {
+  public postAkiLoad(container: DependencyContainer): void {
     const db = container.resolve<DatabaseServer>("DatabaseServer");
 
     const nbStagesCreated = this.stashBuilder.injectStashesToDb(db);
