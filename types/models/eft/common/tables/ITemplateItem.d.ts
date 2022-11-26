@@ -34,6 +34,7 @@ export interface Props {
     LootExperience?: number;
     ExamineExperience?: number;
     HideEntrails?: boolean;
+    InsuranceDisabled?: boolean;
     RepairCost?: number;
     RepairSpeed?: number;
     ExtraSizeLeft?: number;
@@ -206,6 +207,7 @@ export interface Props {
     IsOneoff?: boolean;
     MustBoltBeOpennedForExternalReload?: boolean;
     MustBoltBeOpennedForInternalReload?: boolean;
+    NoFiremodeOnBoltcatch?: boolean;
     BoltAction?: boolean;
     HipAccuracyRestorationDelay?: number;
     HipAccuracyRestorationSpeed?: number;
@@ -252,7 +254,7 @@ export interface Props {
     foodUseTime?: number;
     foodEffectType?: string;
     StimulatorBuffs?: string;
-    effects_health?: any;
+    effects_health?: IHealthEffect[] | Record<string, Record<string, number>>;
     effects_damage?: any;
     MaximumNumberOfUsage?: number;
     knifeHitDelay?: number;
@@ -363,6 +365,10 @@ export interface Props {
     CanBeHiddenDuringThrow?: boolean;
     MinTimeToContactExplode?: number;
     ExplosionEffectType?: string;
+}
+export interface IHealthEffect {
+    type: string;
+    value: number;
 }
 export interface Prefab {
     path: string;
