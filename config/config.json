@@ -190,12 +190,6 @@
       "dimensions": [4, 4],
       "requirements": [
         {
-          "// waist pouch": true,
-          "templateId": "5732ee6a24597719ae0c0281",
-          "count": 1,
-          "type": "Item"
-        },
-        {
           "// Flat Screwdriver": true,
           "type": "Tool",
           "templateId": "5d63d33b86f7746ea9275524"
