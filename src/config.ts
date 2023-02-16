@@ -1,5 +1,5 @@
-import type { Requirement as RequirementArea } from "@spt-aki/models/eft/hideout/IHideoutArea";
-import type { Requirement as RequirementProduction } from "@spt-aki/models/eft/hideout/IHideoutProduction";
+import type { IStageRequirement as StageRequirement } from "@spt-aki/models/eft/hideout/IHideoutArea";
+import type { Requirement as ProductionRequirement } from "@spt-aki/models/eft/hideout/IHideoutProduction";
 
 import { resolve } from "path";
 
@@ -17,13 +17,13 @@ export type PackageJson = {
  */
 export type StashUpgrade = {
   size: number;
-  requirements: RequirementArea[];
+  requirements: StageRequirement[];
 };
 
 export type SecureContainerConfig = {
   not_craftable?: boolean;
   dimensions: [number, number];
-  requirements: RequirementProduction[];
+  requirements: ProductionRequirement[];
 };
 
 export type SecureContainers = {

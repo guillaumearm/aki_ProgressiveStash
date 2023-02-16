@@ -18,7 +18,6 @@ const createCraft = (
       r.type === "Item" ? { ...r, isFunctional: false } : r
     ),
     productionTime: 0,
-    boosters: null,
     endProduct: itemId,
     continuous: false,
     count: 1,

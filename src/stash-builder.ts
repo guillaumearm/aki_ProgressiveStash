@@ -7,7 +7,8 @@ import { getStashId } from "./utils";
 import type { Config, StashUpgrade } from "./config";
 import { STANDARD_STASH_ID, STASH_AREA } from "./constants";
 
-const EMPTY_STAGE = {
+const EMPTY_STAGE: Stage = {
+  improvements: [],
   requirements: [],
   bonuses: [],
   slots: 0,
@@ -219,19 +220,19 @@ export class StashBuilder {
 
     Object.keys(tables.locales.global).forEach((localeName) => {
       const localeBase = tables.locales.global[localeName];
-      const standardTemplate = localeBase.templates[STANDARD_STASH_ID];
+      const standardTemplate = localeBase[STANDARD_STASH_ID];
 
       items.forEach((item, idx) => {
         const stage = idx + 1;
         const interfaceId = `hideout_area_3_stage_${stage}_description`;
 
         const size = item._props.Grids[0]._props.cellsV;
-        localeBase.interface[interfaceId] = `Progressive Stash (10x${size})`;
+        localeBase[interfaceId] = `Progressive Stash (10x${size})`;
 
         // if locale template does not exists
-        if (!localeBase.templates[item._id]) {
+        if (!localeBase[item._id]) {
           // create locale template from standard template
-          localeBase.templates[item._id] = standardTemplate;
+          localeBase[item._id] = standardTemplate;
           counter = counter + 1;
         }
       });
