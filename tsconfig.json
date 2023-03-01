@@ -16,6 +16,6 @@
     }
   },
   "lib": ["es2020"],
-  "include": ["src/*", "src/**/*", "types/**/*"],
+  "include": ["src/*", "src/**/*"],
   "exclude": ["tmp/**/*", "dist/**/*"]
 }

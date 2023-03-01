@@ -4,9 +4,9 @@ export interface IHideoutProduction {
     requirements: Requirement[];
     productionTime: number;
     endProduct: string;
-    isEncoded?: boolean;
-    locked?: boolean;
-    needFuelForAllProductionTime?: boolean;
+    isEncoded: boolean;
+    locked: boolean;
+    needFuelForAllProductionTime: boolean;
     continuous: boolean;
     count: number;
     productionLimitCount: number;

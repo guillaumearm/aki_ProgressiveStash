@@ -14,6 +14,8 @@ const EMPTY_STAGE: Stage = {
   slots: 0,
   constructionTime: 0,
   description: "",
+  autoUpgrade: false,
+  displayInterface: true,
 };
 
 const EMPTY_STASH_BONUS = {

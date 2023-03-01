@@ -16,11 +16,11 @@ export interface IAreaRequirement {
     type: string;
 }
 export interface Stage {
-    autoUpgrade?: boolean;
+    autoUpgrade: boolean;
     bonuses: StageBonus[];
     constructionTime: number;
     description: string;
-    displayInterface?: boolean;
+    displayInterface: boolean;
     improvements: IStageImprovement[];
     requirements: IStageRequirement[];
     slots: number;

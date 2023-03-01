@@ -22,6 +22,9 @@ const createCraft = (
     continuous: false,
     count: 1,
     productionLimitCount: 1,
+    isEncoded: false,
+    locked: false,
+    needFuelForAllProductionTime: false,
   };
 };
 
