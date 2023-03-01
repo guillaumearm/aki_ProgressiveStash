@@ -1,4 +1,5 @@
 {
+  "disabled": false,
   "debug": true,
   "initial_stash_size": 68,
   "stash_upgrades": [

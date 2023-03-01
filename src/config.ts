@@ -36,6 +36,7 @@ export type SecureContainers = {
 };
 
 export type Config = {
+  disabled?: boolean;
   debug?: boolean;
   initial_stash_size: number;
   stash_upgrades: StashUpgrade[];

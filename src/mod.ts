@@ -112,12 +112,6 @@ class Mod implements IPreAkiLoadMod, IPostAkiLoadMod {
   public preAkiLoad(container: DependencyContainer): void {
     this.config = readJsonFile(CONFIG_PATH);
 
-    this.profileTemplateBuilder = new ProfieTemplateBuilder();
-    this.stashBuilder = new StashBuilder(this.config);
-    this.secureContainersController = new SecureContainersController(
-      this.config
-    );
-
     this.logger = container.resolve<ILogger>("WinstonLogger");
 
     this.debug = this.config.debug
@@ -125,14 +119,29 @@ class Mod implements IPreAkiLoadMod, IPostAkiLoadMod {
           this.logger.debug(`${getModDisplayName(false)}: ${data}`, true)
       : noop;
 
+    this.profileTemplateBuilder = new ProfieTemplateBuilder();
+    this.stashBuilder = new StashBuilder(this.config);
+    this.secureContainersController = new SecureContainersController(
+      this.config
+    );
+
     if (this.config.debug) {
       this.debug("debug mode enabled");
+    }
+
+    if (this.config.disabled) {
+      this.debug("disabled in config.json file.");
+      return;
     }
 
     this.logger.info(`===> Loading ${getModDisplayName(true)}`);
   }
 
   public postAkiLoad(container: DependencyContainer): void {
+    if (this.config.disabled) {
+      return;
+    }
+
     const db = container.resolve<DatabaseServer>("DatabaseServer");
 
     const nbStagesCreated = this.stashBuilder.injectStashesToDb(db);
